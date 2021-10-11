@@ -1,0 +1,107 @@
+/*  */
+
+body {
+    padding: 0px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 100vw;
+    /* Ширина viewport width*/
+    height: calc(130vh - 269px);
+    overflow: hidden;
+    padding-top: 269px;
+    /* Высота 100 viewport height  */
+    background-image: url("./background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__name {
+    font-size: 64px;
+    color: #fff;
+    font-family: Helvetica, sans-serif;
+    width: 50%;
+    margin: 0 0 24px 41px;
+}
+
+.header__band,
+.band__list {
+    display: flex;
+    align-items: center;
+    color: white;
+    list-style: none;
+}
+
+.band__list {
+    background-color: #44fba3;
+    padding: 60px 40px;
+    color: #000000;
+    overflow-x: scroll;
+    min-width: 100vw;
+}
+
+.band-list__item {
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    flex: auto 0 0;
+    max-width: 50%;
+    min-width: 25%;
+}
+
+.item-num {
+    font-size: 80px;
+    margin-right: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.item-text {
+    font-size: 27px;
+}
+
+.header__logo {
+    position: absolute;
+    top: 14px;
+    left: 40px;
+}
+
+.header__next-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.band__list::-webkit-scrollbar {
+    display: none;
+}
+
+.band__list::-webkit-scrollbar-track {
+    display: none;
+}
+
+.band__list::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+
+/* СайдБар */
+
+.page-content {
+    max-width: 100vw;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+}
+
+.page-content__sidebar {
+    width: 30%;
+    max-width: 387px;
+    background-color: #44fba3;
+    height: 100%;
+}
